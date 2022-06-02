@@ -18,11 +18,13 @@ body {
 }
 
 .menu-bar {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
-    gap: 2.5rem;
-    height: 50px;
+    gap: 1rem;
+    height: 60px;
     width: 500px;
+    padding: .2rem;
     border: .2px solid rgb(202, 202, 202);
     border-radius: 10px;
     box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, .2);
@@ -33,4 +35,61 @@ body {
     font-size: 1rem;
     border: none;
     background: none;
+    cursor: pointer;
+}
+
+.home-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-btn:hover {
+    color: rgb(4, 235, 235);
+}
+
+.explore-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-btn:hover {
+    color: rgb(255, 44, 220);
+}
+
+.notifications-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notifications-btn:hover {
+    color: rgb(235, 193, 4);
+}
+
+.messages-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.messages-btn:hover {
+    color: rgb(12, 235, 4);
+}
+
+.more-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.more-btn:hover {
+    background-color: rgba(0, 0, 0, 0.151);
 }
